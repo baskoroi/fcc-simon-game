@@ -157,10 +157,10 @@ a.start {
 
 a.light {
 	display: block;
-	width: 8px;
-	height: 8px;
+	width: 10px;
+	height: 10px;
 	margin: 0 auto;
-	margin-bottom: 4px;
+	margin-bottom: 3px;
 	border-radius: 50%;
 	border: 2px solid #2B2B2B;
 	background-color: #440000;
@@ -171,7 +171,7 @@ a.strict {
 	width: 30px;
 	height: 30px;
 	margin: 0 auto;
-	margin-bottom: 6px;
+	margin-bottom: 4px;
 	border-radius: 50%;
 	border: 3px solid #2B2B2B;
 	background-color: #ffff2b;
