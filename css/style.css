@@ -1,5 +1,11 @@
 body {
-	padding-top: 80px;
+	background-image: url("https://images6.alphacoders.com/370/370797.jpg");
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+
+	padding-top: 32px;
 }
 
 body, body * {
@@ -14,18 +20,194 @@ body, body * {
 main {
 	display: block;
 	margin: 0 auto;
+
+	margin-bottom: 12px;
 }
 
 .simon-buttons {
+	position: relative;
+
 	margin: 0 auto;
 	width: 480px;
 	height: 480px;
 
 	border-radius: 50%;
 
-	-webkit-box-shadow: 0px 0px 6px 3px rgba(127,127,127,1);
-	-moz-box-shadow: 0px 0px 6px 3px rgba(127,127,127,1);
-	box-shadow: 0px 0px 6px 3px rgba(127,127,127,1);
+	-webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.6);
+	   -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.6);
+	     -o-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.6);
+	        box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.6);
+}
+
+.simon-panel {
+	position: absolute;
+	left: 120px;
+	top: 120px;
+	z-index: 100;
+
+	width: 240px;
+	height: 240px;
+	padding-top: 14px;
+
+	background-color: #F8F8F8;
+
+	border-radius: 120px;
+	border: 10px solid #2B2B2B;
+}
+
+.logo {
+	font-family: "Alfa Slab One", cursive;
+	text-align: center;
+	font-size: 32pt;
+
+	margin: 0;
+	margin-top: 24px;
+	margin-bottom: 4px;
+}
+
+.logo > sup {
+	font-size: 12pt;
+	top: -20px;
+}
+
+.row {
+	padding: 0 30px;
+	margin-bottom: 12px;
+	overflow: hidden;
+}
+
+.row:last-child {
+	margin-bottom: 0;
+}
+
+.row:after {
+	content: "";
+	clear: both;
+}
+
+.col {
+	float: left;
+}
+
+.col:last-child:after {
+	content: "";
+	clear: both;
+}
+
+.col > .control {
+	display: block;
+}
+
+.col > footer {
+	text-align: center;
+	font-weight: bold;
+}
+
+.count-wrapper {
+	width: 60px;
+	margin-right: 12px;
+	padding-top: 10px;
+}
+
+input.count {
+	width: 60px;
+	height: 36px;
+
+	background-color: #440000;
+
+	/* if Simon is "OFF" */
+	color: #692b2b;
+
+	/* if Simon is "ON" */
+	/* color: #d63b3b; */
+
+	font-family: "VT323", monospace;
+	font-weight: bold;
+	font-size: 18pt;
+	text-align: center;
+
+	margin-bottom: 2px;
+
+	border: 3px solid #2B2B2B;
+	border-radius: 6px;
+}
+
+.start-wrapper {
+	padding-top: 4px;
+	margin-right: 16px;
+}
+
+a.start {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	margin-top: 8px;
+	margin-bottom: 6px;
+	border-radius: 50%;
+	border: 3px solid #2B2B2B;
+
+	background-color: #f20404;
+
+	cursor: pointer;
+}
+
+.strict-wrapper {	
+}
+
+a.light {
+	display: block;
+	width: 8px;
+	height: 8px;
+	margin: 0 auto;
+	margin-bottom: 4px;
+	border-radius: 50%;
+	border: 2px solid #2B2B2B;
+	background-color: #440000;
+}
+
+a.strict {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 0 auto;
+	margin-bottom: 6px;
+	border-radius: 50%;
+	border: 3px solid #2B2B2B;
+	background-color: #ffff2b;
+
+	cursor: pointer;
+}
+
+.switch-wrapper {
+	margin: 0 auto;
+	width: 120px;
+	text-align: center;
+}
+
+.switch {
+	display: inline-block;
+	background-color: #2B2B2B;
+	width: 28px;
+	border: 2px solid #2B2B2B;
+
+	cursor: pointer;
+}
+
+.piece {
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	background-color: #5ab7f4;
+}
+
+.piece:first-child {
+	background-color: #5ab7f4;
+}
+
+.piece:last-child {
+	background-color: inherit;
 }
 
 .play-button {
@@ -96,4 +278,30 @@ main {
 
 .yellow:hover {
 	background-color: #fff600;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.info {
+	background-color: #FFFFFF;
+
+	width: 280px;
+	margin: 0 auto;
+
+	-webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.6);
+	   -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.6);
+	     -o-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.6);
+	        box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.6);
+
+	overflow: hidden;
+}
+
+.info * {
+	text-align: center;
+	line-height: .6em;
 }

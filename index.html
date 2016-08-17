@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FCC: Simon Game</title>
     
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans+Condensed:300|VT323" rel="stylesheet">
 
     <!-- styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
@@ -15,12 +16,40 @@
     
     <main>
         <div class="simon-buttons">
+            <div class="simon-panel">
+                <h1 class="logo unselectable">Simon<sup>&reg;</sup></h1>
+                <div class="row">
+                    <div class="col count-wrapper">
+                        <input class="control count unselectable" type="text" name="count" disabled="disabled" value="--">
+                        <footer class="unselectable">COUNT</footer>
+                    </div>
+                    <div class="col start-wrapper">
+                        <a class="control start"></a>
+                        <footer class="unselectable">START</footer>
+                    </div>
+                    <div class="col strict-wrapper">
+                        <a class="control light"></a>
+                        <a class="control strict"></a>
+                        <footer class="unselectable">STRICT</footer>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="switch-wrapper unselectable">
+                        <span>OFF</span>&nbsp;<div class="switch unselectable"><span class="piece"></span><span class="piece"></span></div>&nbsp;<span>ON</span>
+                    </div>
+                </div>
+            </div>
             <div class="green play-button"></div>
             <div class="red play-button"></div>
             <div class="yellow play-button"></div>
             <div class="blue play-button"></div>
         </div>
     </main>
+    <footer class="info">
+        <p>Simon Game. All credits go to Simon&reg;.</p>
+        <p>Designed and coded by <a href="https://github.com/baskoroi" target="_blank">Baskoro Indrayana</a>.</p>
+        <p>Background image credits: <a href="http://alphacoders.com/" target="_blank">alphacoders.com</a></p>
+    </footer>
 
 </body>
 </html>
