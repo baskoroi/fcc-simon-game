@@ -1,0 +1,99 @@
+body {
+	padding-top: 80px;
+}
+
+body, body * {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
+
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+main {
+	display: block;
+	margin: 0 auto;
+}
+
+.simon-buttons {
+	margin: 0 auto;
+	width: 480px;
+	height: 480px;
+
+	border-radius: 50%;
+
+	-webkit-box-shadow: 0px 0px 6px 3px rgba(127,127,127,1);
+	-moz-box-shadow: 0px 0px 6px 3px rgba(127,127,127,1);
+	box-shadow: 0px 0px 6px 3px rgba(127,127,127,1);
+}
+
+.play-button {
+	width: 240px;
+	height: 240px;
+	float: left;
+}
+
+.simon-buttons > .green {
+	border-top-left-radius: 240px;
+	border: 10px solid #2B2B2B;
+	border-top: 20px solid #2B2B2B;
+	border-left: 20px solid #2B2B2B;
+}
+
+.simon-buttons > .red {
+	border-top-right-radius: 240px;
+	border: 10px solid #2B2B2B;
+	border-top: 20px solid #2B2B2B;
+	border-right: 20px solid #2B2B2B;
+}
+
+.simon-buttons > .yellow {
+	border-bottom-left-radius: 240px;
+	border: 10px solid #2B2B2B;
+	border-bottom: 20px solid #2B2B2B;
+	border-left: 20px solid #2B2B2B;
+}
+
+.simon-buttons > .blue {
+	border-bottom-right-radius: 240px;
+	border: 10px solid #2B2B2B;
+	border-bottom: 20px solid #2B2B2B;
+	border-right: 20px solid #2B2B2B;
+}
+
+.play-button:hover {
+	cursor: pointer;
+}
+
+.green {
+	background-color: #27ae60;
+}
+
+.green:hover {
+	background-color: #2ecc71;
+}
+
+.red {
+	background-color: #c0392b;
+}
+
+.red:hover {
+	background-color: #e9594a;
+}
+
+.blue {
+	background-color: #2980b9;
+}
+
+.blue:hover {
+	background-color: #3498db;
+}
+
+.yellow {
+	background-color: #e5db20;
+}
+
+.yellow:hover {
+	background-color: #fff600;
+}
